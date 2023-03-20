@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+          <!--navigasi of website-->
+          <nav>
+            <!--logo menu website-->
+            <div class="logo">COOKING</div>
+
+            <!--toggle bar-->
+            <div class="toggle-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <!--navigasi menu list-->
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#service">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <!-- <li class="hire-btn"><a href="#">Hire!</a></li> -->
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+    <section class="cards">
+        <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+                <div class="card-img-hover" style="background-image: url(img/pizza.jpg);">
+                </div>
+            </a>
+            <div class="card-info">
+                <span class="card-category">Recipe</span>
+                <h3 class="card-title">pizza</h3>
+                <span>
+                    <button class="btn" style="background-color: tomato; color: white;" data-bs-toggle="modal" data-bs-target="#pizza">Read Recipe</button>
+                </span>
+            </div>
+        </article>
+
+
+        <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+                <div class="card-img-hover" style="background-image: url(img/rendang.jpg);">
+                </div>
+            </a>
+            <div class="card-info">
+                <span class="card-category">Recipe</span>
+                <h3 class="card-title">rendang</h3>
+                <span>
+                    <button class="btn " style="background-color: tomato; color: white;" data-bs-toggle="modal" data-bs-target="#rendang">Read Recipe</button>
+                </span>
+            </div>
+        </article>
+
+
+        <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+                <div class="card-img-hover" style="background-image: url(img/pancake.jpg);">
+                </div>
+            </a>
+            <div class="card-info">
+                <span class="card-category">Recipe</span>
+                <h3 class="card-title">Pancake</h3>
+                <span>
+                    <button class="btn" style="background-color: tomato; color: white;" data-bs-toggle="modal" data-bs-target="#pancake">Read Recipe</button>
+                </span>
+            </div>
+        </article>
+
+
+        <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+                <div class="card-img-hover" style="background-image: url(img/beef.jpg);">
+                </div>
+            </a>
+            <div class="card-info">
+                <span class="card-category">Recipe</span>
+                <h3 class="card-title">Beef Teriyaki</h3>
+                <span>
+                    <button class="btn" style="background-color: tomato; color: white;" data-bs-toggle="modal" data-bs-target="#beef">Read Recipe</button>
+                </span>
+            </div>
+        </article>
+
+
+        <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+                <div class="card-img-hover" style="background-image: url(img/friedchicken.jpeg);">
+                </div>
+            </a>
+            <div class="card-info">
+                <span class="card-category">Recipe</span>
+                <h3 class="card-title">Fried Chicken</h3>
+                <span>
+                    <button class="btn" style="background-color: tomato; color: white;" data-bs-toggle="modal" data-bs-target="#ayam">Read Recipe</button>
+                    </div>
+                </span>
+            </div>
+        </article>
+
+        
+        <article class="card">
+            <div class="card-img"></div>
+            <a href="#">
+                <div class="card-img-hover" style="background-image: url(img/spageti.jpg);">
+                </div>
+            </a>
+            <div class="card-info">
+                <span class="card-category">Recipe</span>
+                <h3 class="card-title">Sphagetti Bolognise</h3>
+                <span>
+                    <button class="btn" style="background-color: tomato; color: white;" data-bs-toggle="modal" data-bs-target="#spageti">Read Recipe</button>
+                </span>
+            </div>
+        </article>
+    </section>
+
+    <!--Modals-->
+    <div class="modal fade" id="pancake" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Pancake" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pancake">Pancake</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    <img src="img/pancake.jpg" width="100%" style="border-radius:20px"><br />
+                        <b>Pancake</b><br>
+            Recipe : <br />
+            1.  100 gr tepung terigu <br />
+            2.  2 sdm gula pasir secukupnya Garam <br />
+            3.  1 sdm baking powder <br />
+            4.  1 btr telur ayam <br />
+            5.  100 ml susu cair sapi <br />
+            6.  30 gr mentega
+            <br />
+            <b>Cara Memasak:</b><br />
+           Buat buttermilk dengan cara mencampur susu dengan air lemon, lalu diamkan selama 10 menit.
+    Campur tepung terigu, gula, gula, vanili, baking powder, baking soda, dan garam. Aduk rata.
+    Tambahkan telur, buttermilk, dan margarin cair ke adonan kering. Aduk rata.
+    Panaskan teflon anti lengket dengan api sedang.
+    Tuang adonan pancake dengana sendok sayur ke teflon. Setelah berongga, balik adonan, lalu angkat dan sajikan.
+        
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="rendang" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Rendang" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rendang">Rendang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/rendang.jpg" width="100%" style="border: radius 30px;"><br />
+                            <b>Rendang:</b><br />
+                            Recipe : <br />
+                            1.  600g daging sapi bagian sengkel, potong kotak 5 cm<br />
+                            2.  3 lembar daun jeruk <br />
+                            3.  2 batang serai <br />
+                            4.  2 lembar daun jeruk <br />
+                            5.  1 lembar daun kunyit <br />
+                            6.  130 ml santan instan <br />
+                            7.  2.5L air <br />
+                            8.  1/2 sdm garam <br />
+                            9.  5 sdm minyak <br />
+                            <br />
+                            <b>Cara Memasak:</b><br />
+                            Panaskan minyak, tumis bumbu halus bersama daun jeruk, serai, daun salam, daun kunyit, dan pala hingga harum.
+                            Masukkan daging, aduk rata. Tuang air, masak hingga mendidih.Tambahkan santan, Royco Kaldu Sapi, dan garam. Masak sambil diaduk hingga airnya terserap habis dan minyaknya keluar.
+                            Angkat. Sajikan.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="modal fade" id="pizza" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="pizza" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pizza">Pizza</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/pizza.jpg" width="100%" style="border-radius:20px"><br />
+                                <b>Pizza</b> <br />
+                                Recipe : <br />
+                                1.  200g tepung terigu<br />
+                                2.  3/4 sdt ragi <br />
+                                3.  125ml air hangat <br />
+                                4.  1/2 sdm gula pasir <br />
+                                5.  2 sdm olive oil <br />
+                                6.  1/2 sdt garam <br />
+                                7.  1 sdm susu bubuk (optional) <br />
+                                8.  Topping : <br />
+                                9.  saus bolognese <br />
+                                10. oregano (optional) <br />
+                                11. sosis <br />
+                                12. smoke beef <br />
+                                13. keju mozarella <br />
+                                14. keju chedar <br />
+                                <br />
+            
+                    <b>Cara Memasak :</b><br /> 
+                    
+            Untuk memastikan ragi aktif, larutkan ragi ke dalam 125 air hangat yg uda dicampur gula. Tunggu hingga berbuih,
+            Campur tepung + susu bubuk + garam, lalu tuangkan air ragi, aduk, tambahkan minyak, uleni smpe tercampur rata dan kalis
+            Diamkan adonan sebentar (saya tutup pake serbet/plastic wrap) tunggu agak mengembang, tergantung cuaca juga, saya cukup 30menit aja karena uda keburu laper 🤣
+            Panaskan oven suhu 170-200 (tergantung ovennya, karena beda oven beda jg suhu dan lama memanggang) saya pake oven listrik
+            Siapkan loyang, olesi sdikit margarine/minyak (saya pake loyang bulat 24cm agak ketebelan, klo mau lebih tipis pake loyang lebih besar) tata adonan di loyang, pipihkan tusuk2 garpu dan bentuk sesuai selera
+            Beri saus, lalu taburkan oregano, keju mozarella parut, baru sosis dan beef burger, panggang dalam oven hingga keju lumer dan pinggiran terlihat kecoklatan. Saya panggang selama 30 menit api atas bawah,
+            Sajikan bersama saus sambal/mayonise
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="modal fade" id="beef" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="beef" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="beef">Beef Teriyaki</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/beef.jpg" width="100%" style="border-radius:20px"><br />
+                                    <b>Beef Teriyaki</b> <br />
+                                    Recipe : <br />
+                                    1.  300 gr daging sapi has dalam<br />
+                                    2.  2 siung bawang putih, cincang halus <br />
+                                    3.  1 jahe, parut halus <br />
+                                    4.  1 buah bawang bombay <br />
+                                    5.  300ml air <br />
+                                    6.  1sdm tepung maizena <br />
+                                    7.  2 sdm kecap manis <br />
+                                    8.  2 sdm kecap asin <br />
+                                    9.  1 sdm saus tiram <br />
+                                    10. 1 sdt minyak wijen <br />
+                                    11. 1/2 sdt garam <br />
+                                    12. 1/4 sdt merica <br />
+                                    <br />
+                
+                        <b>Cara Memasak :</b><br /> 
+                        
+                        1.	Iris daging sapi tipis memanjang. Campur daging sapi dengan bahanperendam. Aduk rata. Diamkan daging di kulkas selama minimal 30 menit supaya bumbu meresap.
+                        2.	Tumis bawang putih dan jahe dengan sedikit minyak goreng hinggaharum. Masukkan daging sapi, masak sampai berubah warna.
+                        3.	Masukkan sedikit air, masak sampai daging sapi matang dan empuk.
+                        Tambahkan bawang bombay dan beri larutan maizena supaya mengental.
+                        Koreksi rasa dan angkat.
+                        4.	Beef teriyaki siap disajikan.
+                        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="modal fade" id="ayam" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ayam" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ayam">Fried Chicken</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/friedchicken.jpeg" width="100%" style="border-radius:20px"><br />
+                                        <b>Fried Chicken</b> <br />
+                                        Recipe : <br />
+                                        1.	500 gr dada ayam filet (boleh pakai ayam potong) Adonan Bumbu Marinasi<br />
+                                        2.	1/2 cangkir susu cair putih (sy pakai susu bubuk dilarutkan air)<br />
+                                        3.	secukupnya Lada bubuk <br />
+                                        4.	secukupnya Cabai bubuk <br />
+                                        5.	1/2 sdt garam <br />
+                                        6.	5 siung bawang putih <br />
+                                        7.	1 butir telur <br />
+                                        <br />
+                    
+                            <b>Cara Memasak :</b><br /> 
+                            
+                            1.	Cuci bersih dan potong ayam sesuai selera
+                            2.	Siapkan bumbu marinasi (lihat diresep) kemudian masukkan semua bahan ke dalam blender hingga tercampur rata
+                            3.	Marinasi ayam dengan bumbu yang sudah diblender, simpan ke dalam kulkas selama 1 jam (lebih lama lebih meresap)
+                            4.	Baluri ayam yg sudah dimarinasi dengan adonan kering (lihat diresep) 5. Goreng ayam ke dalam minyak panas dengan api sedang hingga kecoklatan.
+                                Sajikan
+
+                            
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="modal fade" id="spageti" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="spageti" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="spageti">Sphagetti Bolognise</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/spageti.jpg" width="100%" style="border-radius:20px"><br />
+                                            <b>Fried Chicken</b> <br />
+                                            Recipe : <br />
+                                            1.	250 gram La Fonte Spaghetti<br />
+                                            2.	200 gram OL Boneless Dada Ayam Tanpa Kulit, potong dadu<br />
+                                            3.	La Fonte Saus Chicken Bolognese 290 g <br />
+                                            4.	2 sendok makan saus tomat/pasta tomat <br />
+                                            5.	2 sdt garam <br />
+                                            6.	1,5 sendok teh daun parsley kering <br />
+                                            7.	1 sendok teh oregano <br />
+                                            <br />
+                        
+                                <b>Cara Memasak :</b><br /> 
+                                
+                                1.	Didihkan air, beri 1 sendok mentega dan garam secukupnya agar tidak lengket ketika direbus serta rasanya lebih gurih. Masukkan pasta spaghetti lalu rebus hingga teksturnya al dente.
+                                2.	Pindahkan pasta di wadah lain dan jangan buang air rebusannya.
+                                3.	Panaskan mentega hingga meleleh, masukkan potongan dada ayam. Masak sebentar hingga setengah matang.
+                                4.	Masukkan irisan bawang bombay, aduk rata bersama potongan dada ayam. Masak hingga harum dan bentuknya layu.
+                                5.	Tuangkan Saus Chicken Bolognese pada tumisan. Tambahkan bumbu oregano, parsley kering, garam, lada, serta pasta tomat. Aduk hingga rata.
+                                6.	Jika terlalu kering, tambahkan 2-3 sendok makan air rebusan pasta. Koreksi rasa. Matikan api jika rasanya sudah pas.
+                                7.	Tata spaghetti bolognese di piring saji. Tuangkan saus di atasnya.
+                                8.	Sajikan dengan mencampurkan sausnya ketika hendak disantap agar lebih terasa bumbunya.
+                                
+    
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+</body>
+</html>
